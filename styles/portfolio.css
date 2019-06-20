@@ -1,37 +1,653 @@
-/*
-Error: Invalid CSS after "... { ... }     *\/": expected "}", was ""
-        on line 799 of /Users/heidi/Documents/GIT Repositories/Portfolio/styles/portfolio.scss
+/* Scss Document */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700|Six+Caps&display=swap");
+html {
+  min-height: 100%;
+  position: relative; }
 
-794: 
-795: // Large devices (desktops, 992px and up)
-796: @media (min-width: 992px) { ... }
-797: 
-798: // Extra large devices (large desktops, 1200px and up)
-799: @media (min-width: 1200px) { ... }     *\/
+body {
+  font-family: "Roboto", sans-serif;
+  color: #5D595E;
+  background-color: #F2F2F2; }
 
-Backtrace:
-/Users/heidi/Documents/GIT Repositories/Portfolio/styles/portfolio.scss:799
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:679:in `block'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/bin/sass:37:in `load'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/bin/sass:37:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"... { ... }     */\": expected \"}\", was \"\"\A         on line 799 of /Users/heidi/Documents/GIT Repositories/Portfolio/styles/portfolio.scss\A \A 794: \A 795: // Large devices (desktops, 992px and up)\A 796: @media (min-width: 992px) { ... }\A 797: \A 798: // Extra large devices (large desktops, 1200px and up)\A 799: @media (min-width: 1200px) { ... }     */"; }
+p {
+  margin-bottom: .6rem; }
+
+a {
+  color: #5D595E;
+  text-decoration: underline; }
+
+.rev {
+  color: #fff;
+  text-align: center; }
+  .rev a, .rev a:hover {
+    color: #fff; }
+
+a:hover {
+  color: #983222;
+  text-decoration: none; }
+
+i.fas.fa-mouse-pointer,
+i.fas.fa-mug-hot,
+i.fas.fa-arrow-circle-right,
+i.far.fa-laugh-beam,
+i.far.fa-frown {
+  color: #983222; }
+
+.wrap-800 {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff; }
+  .wrap-800 .container-fluid {
+    margin: 0;
+    padding: 0; }
+
+.wrap-1170 {
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: #fff; }
+
+.section {
+  display: block;
+  clear: both; }
+
+.content {
+  max-width: 800px;
+  padding: 0 10px 10px 10px;
+  position: relative; }
+  .content p .row {
+    margin-top: 30px; }
+
+.shadow-text {
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 2rem auto 0 auto;
+  position: relative; }
+  .shadow-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    display: inline;
+    padding: 0 10px;
+    margin: 0; }
+
+.graybg {
+  background-color: #F2F2F2; }
+
+.grnbg {
+  background-color: #C7DED5; }
+
+.tanbg {
+  background-color: #F2F2F2; }
+
+#user-test .wrap-1170, #user-test .wrap-800 {
+  background-color: #F2F2F2; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.3rem; }
+
+p.small {
+  font-size: 13px;
+  line-height: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 320px; }
+
+h1 {
+  font-family: "Six Caps", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #983222;
+  display: inline-block;
+  margin-bottom: .3rem; }
+
+h1.number {
+  font-size: 54px;
+  color: #5D595E;
+  display: inline; }
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4rem;
+  text-align: left;
+  color: #5D595E;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem; }
+
+h3 {
+  font-family: "Six Caps", sans-serif;
+  font-size: 45px;
+  text-align: center;
+  color: #983222;
+  margin: 0 auto; }
+
+h4 {
+  font-size: 21px;
+  line-height: 1.1rem;
+  text-align: left;
+  color: #5D595E;
+  margin-bottom: .4rem; }
+
+h4:first-of-type {
+  margin-top: 1rem; }
+
+.normal-weight {
+  font-weight: 400; }
+
+.first-letter {
+  font-family: "Six Caps", sans-serif;
+  font-size: 54px;
+  line-height: 1.8rem;
+  color: #C8C5C5;
+  float: left;
+  padding: 0 4px 5px 0; }
+
+blockquote.blockquote p {
+  font-size: .7rem;
+  line-height: 1.1rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto 0;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle; }
+blockquote.blockquote a, blockquote.blockquote a:hover {
+  color: #fff; }
+blockquote.blockquote footer.blockquote-footer {
+  font-size: .6rem;
+  color: #fff;
+  padding: 0;
+  background-color: transparent;
+  margin-top: 3px; }
+blockquote.blockquote .bracket {
+  font-family: Roboto;
+  font-size: 4rem;
+  color: #A5A5A5;
+  margin: 0 5px 0 0;
+  display: inline-block;
+  vertical-align: middle; }
+blockquote.blockquote .bracket.right {
+  margin: 5px; }
+
+img {
+  max-width: 100%;
+  margin-bottom: 10px; }
+
+img.shadow {
+  box-shadow: 0 -0.2rem 1rem rgba(0, 0, 0, 0.15) !important; }
+
+.linebreak {
+  color: #A5A5A5;
+  padding: 0 5px; }
+
+.marquee {
+  animation-timing-function: ease-in-out; }
+
+.img-full {
+  background-color: #5D595E;
+  padding: 20px 10px 10px 10px;
+  margin-top: 10px; }
+  .img-full .content {
+    margin-top: -30px; }
+    .img-full .content img {
+      margin: 0 auto 10px auto; }
+    .img-full .content img.addy.shadow.shadow-drop-top {
+      margin-bottom: 0 !important;
+      padding-bottom: 0;
+      max-width: 20%;
+      float: right; }
+    .img-full .content .col-md-12 {
+      text-align: center; }
+    .img-full .content .wrap-800 {
+      background-color: transparent; }
+      .img-full .content .wrap-800 h2 {
+        margin-top: .2rem; }
+  .img-full h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin: -.3rem 0 1.2rem 0; }
+
+.intro-block {
+  padding: 40px 10px 5px 10px;
+  position: relative; }
+  .intro-block .intro-heading {
+    border-bottom: 1px solid #A5A5A5;
+    display: block;
+    margin-bottom: .3rem;
+    margin-top: 3rem;
+    position: relative; }
+    .intro-block .intro-heading h1 {
+      margin-top: .3rem;
+      text-align: left; }
+    .intro-block .intro-heading h2 {
+      text-align: left;
+      margin: 0; }
+    .intro-block .intro-heading .navigation {
+      text-align: center;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 5px 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: fixed;
+      z-index: 999;
+      box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1); }
+      .intro-block .intro-heading .navigation img, .intro-block .intro-heading .navigation img.inactive, .intro-block .intro-heading .navigation img:hover {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0 2px; }
+      .intro-block .intro-heading .navigation img:hover {
+        box-shadow: 0 0 1px 2px #f3e9a6; }
+      .intro-block .intro-heading .navigation img.inactive, .intro-block .intro-heading .navigation img.inactive:hover {
+        opacity: 0.4;
+        cursor: default; }
+  .intro-block p.small {
+    display: inline-block;
+    clear: both; }
+
+#home .wrap-800 {
+  background-color: #5D595E;
+  color: #fff; }
+  #home .wrap-800 h3 {
+    font-size: 38px;
+    color: #F2F2F2;
+    color: #983222;
+    padding: 10px 10px 0 10px;
+    background-color: #fff; }
+    #home .wrap-800 h3 .title {
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: #5D595E;
+      padding: 0 3px 10px 0; }
+  #home .wrap-800 .bio-photo {
+    padding: 0 0 10px 0;
+    text-align: center; }
+    #home .wrap-800 .bio-photo img {
+      border: 1px solid #fff;
+      max-height: 190px;
+      margin: 0 auto; }
+    #home .wrap-800 .bio-photo p.small {
+      margin-top: .5rem;
+      margin-bottom: .5rem; }
+  #home .wrap-800 .top-skills {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 10px 10px 10px;
+    max-width: 95%; }
+    #home .wrap-800 .top-skills h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      margin: .1rem 0; }
+    #home .wrap-800 .top-skills p {
+      font-size: 12px;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: .9rem;
+      text-align: center;
+      padding-left: 0;
+      margin: 0 auto;
+      padding: 0; }
+      #home .wrap-800 .top-skills p span.space {
+        padding-right: 7px; }
+      #home .wrap-800 .top-skills p strong {
+        font-weight: 700; }
+
+#samples {
+  color: #5D595E; }
+  #samples .wrap-800 {
+    background-color: #fff;
+    padding: 20px 0 0 0; }
+    #samples .wrap-800 h3 {
+      color: #A5A5A5; }
+    #samples .wrap-800 .intro h4 {
+      font-family: "Roboto", sans-serif;
+      font-size: 30px;
+      line-height: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      margin: 0 auto;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8); }
+
+.site-entry {
+  padding-bottom: 40px; }
+  .site-entry h1 {
+    font-family: "Six Caps", sans-serif;
+    font-size: 40px;
+    line-height: .9rem;
+    text-align: right;
+    color: #fff;
+    font-weight: normal;
+    margin-right: -10px;
+    float: right; }
+    .site-entry h1 a {
+      color: #F2F2F2;
+      text-decoration: none; }
+
+.job-story {
+  bottom: 20px;
+  left: 0;
+  position: absolute; }
+  .job-story p {
+    margin: 0 0 .3rem 15px; }
+
+/* Samples */
+.summary {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 25px 0 30px; }
+
+.sample-buttons {
+  text-align: center;
+  margin: 1rem auto 0 auto; }
+  .sample-buttons button {
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    width: 165px;
+    height: 40px;
+    margin: 0 3px 10px 3px;
+    border: none;
+    background-color: #983222;
+    transition-property: background;
+    transition-duration: .7s;
+    transition-timing-function: linear; }
+    .sample-buttons button:hover {
+      background-color: #6e2419;
+      box-shadow: 0 0 2px 3px #f3e9a6; }
+
+.stickies {
+  margin: 0 auto;
+  padding: 0; }
+
+.note {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-left: -3px; }
+  .note p {
+    font-family: "Gochi Hand", cursive;
+    font-size: 13px;
+    line-height: 1rem;
+    padding: 7px;
+    background-color: #f3e9a6;
+    width: 120px;
+    height: 140px;
+    margin: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+
+/* Sample Projects page */
+#work .wrap-800 {
+  background-color: #C8C5C5; }
+  #work .wrap-800 .tinted-band {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 150px; }
+  #work .wrap-800 .intro {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: -12px; }
+    #work .wrap-800 .intro h1 {
+      font-size: 200px;
+      color: white;
+      margin: 0; }
+    #work .wrap-800 .intro p {
+      font-family: "Six Caps", sans-serif;
+      line-height: 1rem;
+      font-weight: normal;
+      text-align: center;
+      color: #5D595E;
+      font-size: 70px;
+      font-style: normal;
+      margin: 0 auto 40px auto; }
+    #work .wrap-800 .intro p.small {
+      font-weight: 400;
+      max-width: 320px; }
+  #work .wrap-800 .sample-buttons {
+    flex-direction: column;
+    max-width: 180px;
+    margin: 20px auto 20px auto; }
+    #work .wrap-800 .sample-buttons img {
+      margin-top: 1rem;
+      box-shadow: 0 0 2px 2px #fff; }
+      #work .wrap-800 .sample-buttons img:hover {
+        box-shadow: 0 0 2px 3px #f3e9a6; }
+    #work .wrap-800 .sample-buttons button {
+      margin: 0 0 7px 0;
+      line-height: 1rem;
+      min-height: 40px;
+      width: 165px; }
+
+#job-sample .img-full {
+  padding-bottom: 2rem; }
+  #job-sample .img-full .wrap-800 img {
+    margin-bottom: 0; }
+#job-sample h2 {
+  margin-bottom: .3rem; }
+
+/* Process step 1 page */
+#process {
+  background-color: #F2F2F2; }
+  #process .section {
+    background-color: none; }
+  #process section:first-of-type {
+    max-height: 350px; }
+
+html.process h2 {
+  margin-bottom: 1rem; }
+
+html.process.planning .img-full {
+  padding: 0; }
+  html.process.planning .img-full .content {
+    padding: 0; }
+
+.research {
+  max-width: 100%;
+  background-color: #717171;
+  margin-top: 4rem; }
+  .research .research-img.kenburns-bottom {
+    max-width: 100%;
+    background: url("../images/research.jpg") 0 0 no-repeat;
+    background-size: cover;
+    padding-bottom: 44%; }
+
+footer {
+  height: 40px;
+  width: 100%;
+  max-width: 1170px;
+  background-color: #fff;
+  padding: 15px 5px 5px 5px;
+  position: absolute;
+  bottom: 0;
+  position: relative; }
+  footer p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1rem;
+    margin: 0; }
+    footer p .linebreak {
+      padding: 0 3px; }
+
+.wrap-800 footer {
+  max-width: 800px; }
+
+.back-top {
+  width: 35px;
+  height: 50px;
+  background-color: #C8C5C5;
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
+  opacity: .7;
+  padding: 5px;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.6); }
+  .back-top p {
+    font-family: "Six Caps", sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 1.2em; }
+    .back-top p a {
+      color: #5D595E;
+      text-decoration: none; }
+    .back-top p a:hover {
+      color: #983222;
+      cursor: pointer; }
+
+@media (min-width: 374px) {
+  p.small {
+    max-width: 320px; }
+
+  .stickies .note p {
+    line-height: 1.1rem;
+    width: 140px;
+    padding: 10px;
+    margin: 3px; } }
+@media (min-width: 768px) {
+  h4 {
+    max-width: 95%; }
+
+  p.small {
+    max-width: 400px; }
+
+  .linebreak {
+    padding: 0 7px; }
+
+  .intro-block {
+    padding: 30px 30px 30px 30px; }
+    .intro-block h2 {
+      font-size: 19px;
+      margin: 0 0 1.2rem 14px; }
+    .intro-block .intro-heading {
+      margin-top: 0; }
+      .intro-block .intro-heading .navigation {
+        text-align: right;
+        max-height: 43px;
+        padding: 0;
+        margin: 13px -3px 0 0;
+        background-color: transparent;
+        position: absolute;
+        top: -17px;
+        right: 0;
+        box-shadow: none; }
+
+  .img-full {
+    margin-top: 40px;
+    padding: 20px 30px 0 30px; }
+    .img-full .content {
+      max-width: 1170px;
+      margin: 0 auto;
+      position: relative;
+      margin-top: -60px;
+      padding-bottom: 0; }
+    .img-full .shadow-text {
+      max-width: 90%;
+      margin: 2rem auto 0 auto; }
+
+  html#planning .img-full {
+    padding: 0; }
+    html#planning .img-full .content {
+      padding: 0; }
+
+  #home .wrap-800 .top-skills {
+    max-width: none; }
+    #home .wrap-800 .top-skills p {
+      max-width: 95%; }
+    #home .wrap-800 .top-skills p.subhead {
+      font-size: 16px; }
+  #home .wrap-800 h3 {
+    font-size: 42px; }
+    #home .wrap-800 h3 .title {
+      font-size: 16px;
+      letter-spacing: 2px;
+      padding: 0 10px 10px 10px; }
+      #home .wrap-800 h3 .title.ui {
+        letter-spacing: 3px; }
+
+  #samples .summary {
+    padding: 10px 0 0 0; }
+    #samples .summary h2 {
+      margin-bottom: .3rem; }
+
+  #work .wrap-800 .sample-buttons {
+    margin: 60px auto 40px auto; }
+
+  .intro p {
+    margin: 0 auto; }
+  .intro p.small {
+    font-size: 16px;
+    line-height: 1.2rem;
+    max-width: 490px; }
+
+  .bio-photo {
+    text-align: center; }
+
+  .content {
+    padding: 0 20px 30px 20px; }
+
+  .research {
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 590px; }
+
+  .research-img.kenburns-bottom {
+    max-width: 100%;
+    max-height: 590px; }
+
+  .stickies {
+    max-width: 90%; }
+    .stickies .note {
+      padding: 10px 0x 10px 0px;
+      margin-left: 0;
+      justify-content: center; }
+      .stickies .note p {
+        font-size: 15px;
+        line-height: 1.2rem;
+        width: 170px;
+        height: 150px;
+        margin: 5px; }
+
+  blockquote.blockquote footer.blockquote-footer {
+    margin-top: -17px; }
+
+  footer p {
+    font-size: 13px; } }
+/* ---------------------- 
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }     */
