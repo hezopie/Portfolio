@@ -1,0 +1,37 @@
+/*
+Error: Invalid CSS after "... { ... }     *\/": expected "}", was ""
+        on line 799 of /Users/heidi/Documents/GIT Repositories/Portfolio/styles/portfolio.scss
+
+794: 
+795: // Large devices (desktops, 992px and up)
+796: @media (min-width: 992px) { ... }
+797: 
+798: // Extra large devices (large desktops, 1200px and up)
+799: @media (min-width: 1200px) { ... }     *\/
+
+Backtrace:
+/Users/heidi/Documents/GIT Repositories/Portfolio/styles/portfolio.scss:799
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:679:in `block'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/bin/sass:37:in `load'
+/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/bin/sass:37:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"... { ... }     */\": expected \"}\", was \"\"\A         on line 799 of /Users/heidi/Documents/GIT Repositories/Portfolio/styles/portfolio.scss\A \A 794: \A 795: // Large devices (desktops, 992px and up)\A 796: @media (min-width: 992px) { ... }\A 797: \A 798: // Extra large devices (large desktops, 1200px and up)\A 799: @media (min-width: 1200px) { ... }     */"; }
