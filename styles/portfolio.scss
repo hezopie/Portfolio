@@ -417,6 +417,9 @@ img.shadow {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 10px 25px 0 30px;
+	h2 {
+		margin-bottom: .3rem; 
+	}
 }
 .sample-buttons {
 	text-align: center;
@@ -716,9 +719,6 @@ footer {
 	#samples {
 		.summary {
 			padding: 10px 0 0 0;
-			h2 {
-				margin-bottom: .3rem; 
-			}
 		}
 	}
 	#work {

@@ -357,6 +357,8 @@ img.shadow {
   max-width: 600px;
   margin: 0 auto;
   padding: 10px 25px 0 30px; }
+  .summary h2 {
+    margin-bottom: .3rem; }
 
 .sample-buttons {
   text-align: center;
@@ -590,8 +592,6 @@ footer {
 
   #samples .summary {
     padding: 10px 0 0 0; }
-    #samples .summary h2 {
-      margin-bottom: .3rem; }
 
   #work .wrap-800 .sample-buttons {
     margin: 60px auto 40px auto; }
