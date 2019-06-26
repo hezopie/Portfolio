@@ -1,0 +1,193 @@
+/* CSS Document */
+
+/*BOOTSTRAP MEDIA QUERIES REFERENCE***********
+/* Extra small devices (phones, less than 768px)
+/* No media query since this is the default in Bootstrap 
+
+Small devices (tablets, 768px and up) 
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) 
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up)
+@media (min-width: @screen-lg-min) { ... }
+*********************************************/
+
+/****************************************PROGRAM SPECIFIC OVERRIDES*/
+p {
+	margin: 0 0 6px;
+}
+a {
+	text-decoration: underline;
+	color: #153b1c;
+}
+a:hover {
+	text-decoration: none;
+	color: #153b1c;
+}
+h1 {
+	font-family: grafolita-script, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3.3em;
+	color: #153b1c;
+	text-align: center;
+}
+h2 {
+	font-size: 25px;
+}
+h3 {
+	font-size: 25px;
+	margin-bottom: 8px;
+}
+h4 {
+	font-size: 17px;
+	margin-bottom: 1.3em;
+	margin-top: .7em;
+}
+.text-small {
+	font-size: 90%;
+	margin-bottom: 1.2em;
+}
+.text-xsmall {
+	font-size: 65%;
+	padding: 0 20px;
+}
+/****************************************MAIN STRUCTURE*/
+body {
+	font-family: raleway, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-weight: 400;
+	line-height: 1.25em;
+	background-color: #C6C2A9;
+}
+#wrap {
+	background-color: #e5e5e5;	
+}
+.carousel-caption {
+	top: 0;
+	left: 5%;
+	padding-top: 0;
+}
+.carousel-caption h1 {
+	font-family: raleway, sans-serif;
+	font-size: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: left;
+	text-shadow: 1px 1px 3px #000;
+	margin-bottom: 0;
+}
+.carousel-caption p {
+	font-family: grafolita-script, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	color: #fff;
+	text-align: left;
+	text-indent: 30px;
+	margin-top: -10px;
+}
+.carousel-control {
+	width: 10%;
+}
+.main-content,
+.timeline-photos {
+	margin: 0;
+	padding: 30px;
+}
+.main-content {
+	padding-top: 0;
+}
+.thumbnail {
+	background-color: transparent;
+	margin-bottom: 5px;
+}
+a.thumbnail, a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+	border:  none;
+}
+.thumbnail img {
+	margin: 0 auto;
+	border: 1px solid #666;
+	padding: 4px;
+}
+.thumbnail img:hover {
+	border: 1px solid #999;
+}
+footer {
+	border-bottom: 10px solid #153b1c;
+}
+footer img {
+	max-width: 100%;
+}
+img {
+	width: 100% \9; 
+}
+
+
+/**************************************** MEDIA QUERIES */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+h2 {
+	font-size: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#carousel {
+	margin-bottom: 50px;
+}
+.carousel-caption {
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	padding-top: 0;
+}
+.carousel-caption h1 {
+	font-size: 80px;
+	line-height: 80px;
+}
+.carousel-caption p {
+	font-size: 60px;
+	line-height: 60px;
+	text-indent: 55px;
+	margin-top: -20px;
+}
+.main-content,
+.timeline-photos {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+.thumbnail {
+	transform: rotate(0deg);
+}
+.thumbnail:hover {
+	transform: rotate(5deg);
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+#wrap {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#carousel {
+	max-width: 960px;
+	margin-bottom: 80px;
+}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+
+} 
