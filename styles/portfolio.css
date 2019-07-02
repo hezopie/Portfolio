@@ -360,6 +360,16 @@ img.shadow {
   .summary h2 {
     margin-bottom: .3rem; }
 
+.quotes p {
+  font-style: italic;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: .1rem; }
+  .quotes p.credit {
+    font-size: 12px;
+    font-style: italic;
+    margin: 0; }
+
 .sample-buttons {
   text-align: center;
   margin: 1rem auto 0 auto; }
@@ -591,7 +601,13 @@ footer {
         letter-spacing: 3px; }
 
   #samples .summary {
-    padding: 10px 0 0 0; }
+    padding: 10px 0; }
+
+  .quotes {
+    max-width: 90%;
+    margin: 0 auto; }
+    .quotes p {
+      text-align: center; }
 
   .content.open-house h2 a,
   .content.open-house h2 a:hover {

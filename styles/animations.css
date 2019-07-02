@@ -65,6 +65,21 @@
     text-shadow: 0 0 0 rgba(0, 0, 0, 0.25); }
   100% {
     text-shadow: 0 0 9px rgba(0, 0, 0, 0.75); } }
+/* ANIMATION FOR QUOTE SHADOW TEXT */
+.text-shadow-drop-center-short {
+  -webkit-animation: 1s text-shadow-drop-center-short .5s both;
+  animation: 1s text-shadow-drop-center-short .5s both; }
+
+@-webkit-keyframes text-shadow-drop-center-short {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25); }
+  100% {
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.75); } }
+@keyframes text-shadow-drop-center-short {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25); }
+  100% {
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.75); } }
 /* ANIMATION FOR PLANNING PAGE */
 .kenburns-bottom {
   -webkit-animation: kenburns-bottom 7s ease-out both;
