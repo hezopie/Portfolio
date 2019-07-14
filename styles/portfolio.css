@@ -360,15 +360,26 @@ img.shadow {
   .summary h2 {
     margin-bottom: .3rem; }
 
-.quotes p {
-  font-style: italic;
-  text-align: left;
-  margin-top: 1rem;
-  margin-bottom: .1rem; }
-  .quotes p.credit {
-    font-size: 12px;
-    font-style: italic;
-    margin: 0; }
+.quotes {
+  padding: 30px 0; }
+  .quotes blockquote.blockquote {
+    padding-bottom: 20px; }
+    .quotes blockquote.blockquote p {
+      line-height: 1.1rem;
+      font-weight: 400;
+      text-align: left;
+      color: #5D595E;
+      background-color: #F2F2F2; }
+    .quotes blockquote.blockquote footer.blockquote-footer {
+      font-size: 12px;
+      color: #5D595E;
+      margin: 0;
+      height: 25px;
+      padding-top: 3px; }
+    .quotes blockquote.blockquotefooter.blockquote-footer {
+      font-style: italic; }
+    .quotes blockquote.blockquote .bracket {
+      color: #C8C5C5; }
 
 .sample-buttons {
   text-align: center;
@@ -491,8 +502,7 @@ footer {
   max-width: 1170px;
   background-color: #fff;
   padding: 15px 5px 5px 5px;
-  position: absolute;
-  bottom: 0;
+  bottom: 5px;
   position: relative; }
   footer p {
     font-size: 12px;
@@ -603,12 +613,6 @@ footer {
   #samples .summary {
     padding: 10px 0; }
 
-  .quotes {
-    max-width: 90%;
-    margin: 0 auto; }
-    .quotes p {
-      text-align: center; }
-
   .content.open-house h2 a,
   .content.open-house h2 a:hover {
     color: #fff; }
@@ -657,6 +661,13 @@ footer {
   blockquote.blockquote footer.blockquote-footer {
     margin-top: -17px; }
 
+  .quotes {
+    padding: 30px 0;
+    text-align: center; }
+    .quotes blockquote.blockquote footer.blockquote-footer {
+      margin-top: -12px;
+      height: auto; }
+
   footer p {
     font-size: 13px; } }
 /* ---------------------- 
@@ -674,3 +685,5 @@ footer {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }     */
+
+/*# sourceMappingURL=portfolio.css.map */
