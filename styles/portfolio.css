@@ -458,10 +458,11 @@ img.shadow {
       #work .wrap-800 .sample-buttons img:hover {
         box-shadow: 0 0 2px 3px #f3e9a6; }
     #work .wrap-800 .sample-buttons button {
-      margin: 0 0 7px 0;
       line-height: 1rem;
-      min-height: 40px;
-      width: 165px; }
+      height: 33px;
+      width: 205px;
+      margin: 0 0 4px 0;
+      padding: 0 12px; }
 
 #job-sample .img-full {
   padding-bottom: 2rem; }
