@@ -453,9 +453,9 @@ img.shadow {
   #work .wrap-800 .sample-buttons {
     flex-direction: column;
     max-width: 205px;
-    margin: 20px auto 20px auto; }
+    margin: 20px auto; }
     #work .wrap-800 .sample-buttons img {
-      margin-top: 1rem;
+      margin-top: 2rem;
       box-shadow: 0 0 2px 2px #fff; }
       #work .wrap-800 .sample-buttons img:hover {
         box-shadow: 0 0 2px 3px #f3e9a6; }
@@ -465,6 +465,25 @@ img.shadow {
       width: 205px;
       margin: 0 0 4px 0;
       padding: 0 12px; }
+  #work .wrap-800 .other-samples {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%; }
+    #work .wrap-800 .other-samples ul {
+      text-align: center;
+      padding-left: 0; }
+      #work .wrap-800 .other-samples ul li {
+        list-style: none;
+        text-decoration: none; }
+        #work .wrap-800 .other-samples ul li a:hover {
+          text-decoration: none;
+          color: #983222; }
+      #work .wrap-800 .other-samples ul li.first {
+        font-size: 16px;
+        font-weight: 400;
+        color: #983222;
+        letter-spacing: 1px; }
 
 #job-sample .img-full {
   padding-bottom: 4rem; }
@@ -628,7 +647,7 @@ footer {
     max-height: 450px; }
 
   #work .wrap-800 .sample-buttons {
-    margin: 60px auto 40px auto; }
+    margin: 40px auto; }
 
   .intro p {
     margin: 0 auto; }
