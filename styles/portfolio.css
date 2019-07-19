@@ -202,7 +202,8 @@ img.shadow {
   .img-full .content {
     margin-top: -30px; }
     .img-full .content img {
-      margin: 0 auto 10px auto; }
+      margin: 0 auto 10px auto;
+      align-self: flex-start; }
     .img-full .content img.addy.shadow.shadow-drop-top {
       margin-bottom: 0 !important;
       padding-bottom: 0;
@@ -357,7 +358,7 @@ img.shadow {
 .summary {
   max-width: 600px;
   margin: 0 auto;
-  padding: 10px 25px 0 30px; }
+  padding: 10px 15px 0 20px; }
   .summary h2 {
     margin-bottom: .3rem; }
 
@@ -388,7 +389,7 @@ img.shadow {
   .sample-buttons button {
     line-height: 1.4rem;
     letter-spacing: 1px;
-    width: 165px;
+    width: 140px;
     height: 40px;
     margin: 0 3px 10px 3px;
     border: none;
@@ -471,6 +472,10 @@ img.shadow {
     margin-bottom: 0; }
 #job-sample h2 {
   margin-bottom: .3rem; }
+  #job-sample h2 a {
+    color: #fff; }
+  #job-sample h2 a:hover {
+    color: #C8C5C5; }
 
 /* Process step 1 page */
 #process {
