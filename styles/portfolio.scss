@@ -67,7 +67,8 @@ i.far.fa-frown {
 	clear: both;
 }
 .content {
-	max-width: 800px;
+	max-width: 90%;
+	margin: 0 auto;
 	padding: 0 10px 10px 10px;
 	position: relative;
 	p .row {
@@ -812,6 +813,7 @@ footer {
 	
 	.content {
 		padding: 0 20px 30px 20px;
+		max-width: 800px;
 	}
 	.research {
 		max-width: 100%;
