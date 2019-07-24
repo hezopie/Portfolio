@@ -529,7 +529,7 @@ footer {
   max-width: 1170px;
   background-color: #fff;
   padding: 15px 5px 5px 5px;
-  bottom: 5px;
+  bottom: 0;
   position: relative; }
   footer p {
     font-size: 12px;
