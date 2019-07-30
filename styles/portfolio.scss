@@ -467,6 +467,7 @@ img.shadow {
 		&:hover {
 			background-color: darken($burgandy, 10%);
 			box-shadow: 0 0 2px 3px $yellow;
+			transform: scale(1.01);
 		}
 	}	
 }

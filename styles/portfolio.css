@@ -400,7 +400,8 @@ img.shadow {
     transition-timing-function: linear; }
     .sample-buttons button:hover {
       background-color: #6e2419;
-      box-shadow: 0 0 2px 3px #f3e9a6; }
+      box-shadow: 0 0 2px 3px #f3e9a6;
+      transform: scale(1.01); }
 
 .stickies {
   margin: 0 auto;
