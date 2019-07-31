@@ -537,6 +537,7 @@ img.shadow {
 				box-shadow: 0 0 2px 2px #fff;
 				&:hover {
 					box-shadow: 0 0 2px 3px $yellow;
+					transform: scale(1.01)
 				}
 			}
 			button {

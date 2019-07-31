@@ -460,7 +460,8 @@ img.shadow {
       margin-top: 2rem;
       box-shadow: 0 0 2px 2px #fff; }
       #work .wrap-800 .sample-buttons img:hover {
-        box-shadow: 0 0 2px 3px #f3e9a6; }
+        box-shadow: 0 0 2px 3px #f3e9a6;
+        transform: scale(1.01); }
     #work .wrap-800 .sample-buttons button {
       line-height: 1rem;
       height: 33px;
