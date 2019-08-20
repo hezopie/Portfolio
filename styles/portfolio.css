@@ -51,7 +51,7 @@ i.far.fa-frown {
   clear: both; }
 
 .content {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 10px 10px 10px;
   position: relative; }
@@ -72,7 +72,8 @@ i.far.fa-frown {
     color: rgba(255, 255, 255, 0.3);
     display: inline;
     padding: 0 10px;
-    margin: 0; }
+    margin: 0;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8); }
 
 .graybg {
   background-color: #F2F2F2; }
@@ -122,8 +123,7 @@ h2 {
   line-height: 1.4rem;
   text-align: left;
   color: #5D595E;
-  margin-top: 1rem;
-  margin-bottom: 1.2rem; }
+  margin-top: 1rem; }
 
 h3 {
   font-family: "Six Caps", sans-serif;
@@ -363,6 +363,11 @@ img.shadow {
   .summary h2 {
     margin-bottom: .3rem; }
 
+.content.open-house h2 {
+  padding: 0 10px; }
+.content.open-house img {
+  padding: 0 10px; }
+
 .quotes {
   padding: 30px 0; }
   .quotes blockquote.blockquote {
@@ -492,12 +497,22 @@ img.shadow {
   padding-bottom: 4rem; }
   #job-sample .img-full .wrap-800 img {
     margin-bottom: 0; }
-#job-sample h2 {
-  margin-bottom: .3rem; }
-  #job-sample h2 a {
-    color: #fff; }
-  #job-sample h2 a:hover {
-    color: #C8C5C5; }
+#job-sample h2 a {
+  color: #fff; }
+#job-sample h2 a:hover {
+  color: #C8C5C5; }
+
+/* Process Single page */
+section.section {
+  padding: 50px;
+  min-height: 400px; }
+  section.section .wrap-800 {
+    background-color: transparent; }
+    section.section .wrap-800 h4 {
+      font-size: 16px;
+      font-weight: 700; }
+  section.sectiongraybg {
+    background-color: #F2F2F2; }
 
 /* Process step 1 page */
 #process {
@@ -517,8 +532,7 @@ html.process.planning .img-full {
 
 .research {
   max-width: 100%;
-  background-color: #717171;
-  margin-top: 4rem; }
+  background-color: #717171; }
   .research .research-img.kenburns-bottom {
     max-width: 100%;
     background: url("../images/research.jpg") 0 0 no-repeat;
@@ -642,9 +656,13 @@ footer {
   #samples .summary {
     padding: 10px 0; }
 
+  .content.open-house h2 {
+    padding: 0; }
   .content.open-house h2 a,
   .content.open-house h2 a:hover {
     color: #fff; }
+  .content.open-house img {
+    padding: 0; }
 
   .grad-ceremony img {
     max-height: 450px; }
