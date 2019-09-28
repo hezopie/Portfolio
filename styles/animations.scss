@@ -5,27 +5,15 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
+/* ANIMATIONS FOR HOME PAGE */
 
-/* ANIMATION FOR HOME PAGE TOP TEXT  */
+/* TOP TEXT  */
 .tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 }
+/* CAPTION TEXT  */
 .small.tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
-}
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+	animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
 }
 @keyframes tracking-in-expand {
   0% {
@@ -39,54 +27,24 @@
     opacity: 1;
   }
 }
-
-
-
-/* ANIMATION FOR HOME PAGE SKILLS TEXT  */
+/* SKILLS TEXT  */
 .text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
-}
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
 }
 @keyframes text-focus-in {
   0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 
-
-
-/* ANIMATION FOR HOME SHADOW TEXT */
+/* SHADOW TEXT */
 .text-shadow-drop-center {
-	-webkit-animation: 1s text-shadow-drop-center 4s both;
-	        animation: 1s text-shadow-drop-center 4s both;
-}
-
-@-webkit-keyframes text-shadow-drop-center {
-  0% {
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
-  }
-  100% {
-   text-shadow: 0 0 9px rgba(0, 0, 0, 0.75);
-  }
+	animation: 1s text-shadow-drop-center 4s both;
 }
 @keyframes text-shadow-drop-center {
   0% {
@@ -97,19 +55,11 @@
   }
 }
 
-/* ANIMATION FOR QUOTE SHADOW TEXT */
-.text-shadow-drop-center-short {
-	-webkit-animation: 1s text-shadow-drop-center-short .5s both;
-	        animation: 1s text-shadow-drop-center-short .5s both;
-}
 
-@-webkit-keyframes text-shadow-drop-center-short {
-  0% {
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
-  }
-  100% {
-   text-shadow: 0 0 9px rgba(0, 0, 0, 0.75);
-  }
+
+/* ANIMATION FOR QUOTES PAGE - SHADOW TEXT */
+.text-shadow-drop-center-short {
+	animation: 1s text-shadow-drop-center-short .5s both;
 }
 @keyframes text-shadow-drop-center-short {
   0% {
@@ -121,73 +71,89 @@
 }
 
 
-/* ANIMATION FOR PLANNING PAGE */
 
+/* ANIMATIONS FOR PROCESS PAGE */
 /* TEXT */
-.slide-in-left {
-	-webkit-animation: slide-in-left 1s ease-in both;
-	        animation: slide-in-left 1s ease-in both;
+.slide-in-left-one {
+	animation: slide-in-left-one 2.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
-
-@-webkit-keyframes slide-in-left {
+.slide-in-left-two {
+	animation: slide-in-left-two 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+.slide-in-left-three {
+	animation: slide-in-left-three 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+.slide-in-left-four {
+	animation: slide-in-left-four 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+.slide-in-left-five {
+	animation: slide-in-left-five 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+@keyframes slide-in-left-one {
   0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes slide-in-left {
+@keyframes slide-in-left-two {
   0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left-three {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left-four {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left-five {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
 
-
-/* IMAGE */
-.kenburns-bottom {
-	-webkit-animation: kenburns-bottom 7s ease-out both;
-	        animation: kenburns-bottom 7s ease-out both;
-}
-@-webkit-keyframes kenburns-bottom {
-  0% {
-    -webkit-transform: scale(1.05) translateY(0);
-            transform: scale(1.05) translateY(0);
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-  }
-  100% {
-    -webkit-transform: scale(1) translateY(15px);
-            transform: scale(1) translateY(15px);
-    -webkit-transform-origin: top center;
-            transform-origin: top center;
-  }
-}
-@keyframes kenburns-bottom {
-  0% {
-    -webkit-transform: scale(1.05) translateY(0);
-            transform: scale(1.05) translateY(0);
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-  }
-  100% {
-    -webkit-transform: scale(1) translateY(15px);
-            transform: scale(1) translateY(15px);
-    -webkit-transform-origin: top center;
-            transform-origin: top center;
-  }
-}
+///* IMAGE */
+//.kenburns-bottom {
+//	animation: kenburns-bottom 7s ease-out both;
+//}
+//@keyframes kenburns-bottom {
+//  0% {
+//    transform: scale(1.05) translateY(0);
+//    transform-origin: 0 0;
+//  }
+//  100% {
+//    transform: scale(1) translateY(15px);
+//    transform-origin: top center;
+//  }
+//}
 
 
 /* ANIMATION FOR STICKIES PAGE */
@@ -232,16 +198,7 @@
 /* ANIMATION AC JOB SAMPLE PAGE */
 /* Shadow pop */
 .shadow-drop-top {
-	-webkit-animation: shadow-drop-top 1s 3 both;
-	        animation: shadow-drop-top 1s 3 both;
-}
-@-webkit-keyframes shadow-drop-top {
-  0% {
-    box-shadow: 0 0 0 rgba(243,233,166,.65);
-  }
-  100% {
-    box-shadow: 0 -3px 18px rgba(243,233,166,1.00);
-  }
+	animation: shadow-drop-top 1s 3 both;
 }
 @keyframes shadow-drop-top {
   0% {
