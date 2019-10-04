@@ -74,6 +74,9 @@ p.small {
   padding: 0 15px;
   max-width: 320px; }
 
+p.note-sm {
+  font-size: 13px; }
+
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 26px;
@@ -93,9 +96,6 @@ h2 {
   margin-top: 1rem; }
   h2 + h4 {
     margin-top: 1rem; }
-
-.process-single h2 {
-  text-align: center; }
 
 h3 {
   font-family: "Oswald", sans-serif;
@@ -527,7 +527,11 @@ img {
 
 /* Process Single page */
 .process-single {
+  background-color: #fff;
+  padding-bottom: 60px;
   /* BS scrollspy */ }
+  .process-single h2 {
+    text-align: center; }
   .process-single .intro-block .intro-heading {
     border-bottom: none;
     text-align: center; }
@@ -612,6 +616,8 @@ img {
         color: #5D595E; }
   .process-single .sample-buttons {
     margin: 0 auto; }
+  .process-single footer {
+    display: none; }
 
 .research {
   max-width: 100%;
@@ -701,8 +707,13 @@ footer {
   h2 {
     text-align: left; }
 
-  .process-single h2 {
-    text-align: left; }
+  .process-single {
+    background-color: #F2F2F2;
+    padding-bottom: 0; }
+    .process-single h2 {
+      text-align: left; }
+    .process-single footer {
+      display: block; }
 
   h4 {
     max-width: 95%; }
