@@ -610,6 +610,8 @@ img {
         color: #C8C5C5; }
       .process-single section.section.drkgry .stickies .note p {
         color: #5D595E; }
+  .process-single .sample-buttons {
+    margin: 0 auto; }
 
 .research {
   max-width: 100%;
@@ -693,7 +695,7 @@ footer {
     background-position: center bottom;
     background-color: #5D595E; } }
 .sample-buttons {
-  margin: 4rem auto 0 auto; }
+  margin: .5rem auto 0 auto; }
 
 @media (min-width: 768px) {
   h2 {
