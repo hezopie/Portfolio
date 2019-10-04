@@ -21,6 +21,8 @@ html {
 }
 body {
 	font-family: $Roboto;
+    font-size: 15px;
+    font-weight: 300;
     color: $darkgray;
 	background-color: $lightgray;
 	position: relative;
@@ -79,8 +81,6 @@ a:hover {
 }
 p {
 	font-family: $Roboto;
-	font-size: 15px;
-    font-weight: 300;
 	text-align: left;
 	line-height: 1.3rem;
 	margin-bottom: .6rem;
@@ -88,7 +88,6 @@ p {
 p.small {
 	font-size: 13px;
 	line-height: 1rem;	
-	font-weight: 300;
 	font-style: italic;
 	text-align: center;
 	margin: 0 auto;
@@ -113,7 +112,14 @@ h2 {
 	text-align: left;
 	color: $darkgray;
 	margin-top: 1rem;
-//	margin-bottom: 1.2rem;
+    +h4 {
+        margin-top: 1rem;
+    }
+}
+.process-single {
+    h2 {
+        text-align: center;
+    }
 }
 h3 {
 	font-family: $Oswald;
@@ -125,13 +131,17 @@ h3 {
 }
 h4 {
 	font-size: 21px;
-	line-height: 1.1rem;
+    font-weight: 400;
+	line-height: 1.4rem;
 	text-align: left;
 	color: $darkgray;
-	margin-bottom: .4rem;
+    border-bottom: 1px solid $burgandy;
+    padding-bottom: 7px;
+    margin-top: 3rem;
+    margin-bottom: .8rem;
 }
-h4:first-of-type {
-	margin-top: 1rem;
+ul {
+    padding-inline-start: 20px;
 }
 a {
 	color: $darkgray;
@@ -222,7 +232,6 @@ img {
 	padding: 20px 10px 10px 10px;
 	margin-top: 10px;
 	position: relative;
-    top: -60px;
 	.content {
 		margin-top: -30px;
 		img {
@@ -259,8 +268,7 @@ img {
 	.intro-heading {
 		border-bottom: 1px solid $medgray;
 		display: block;
-		margin-bottom: 0;
-		margin-top: 3rem;
+		margin: 50px 0 0 0;
 		position: relative;
 		h1 {
 			text-align: left;
@@ -283,9 +291,9 @@ img {
 			box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1);
 			img, img.inactive, img:hover {
 				display: inline-block;
-				width: 32px;
-				height: 32px;
-				margin: 0 1px;
+				width: 44px;
+				height: 44px;
+				margin: 0 3px;
 			}
 			img:hover {
 				box-shadow: 0 0 1px 2px $yellow;
@@ -387,6 +395,7 @@ img {
 				color: #fff;
 				margin: 0 auto;
 				text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+                border: none;
 			}
 		}
 	}
@@ -422,6 +431,7 @@ img {
 	padding: 10px 15px 0 20px;
 	h2 {
 		margin-bottom: .3rem; 
+        text-align: left;
 	}
 }
 .content.open-house {
@@ -505,7 +515,7 @@ img {
 /* Sample Projects page */
 #work {
 	position: static;
-	background: url(../images/DaisysWeb.jpg) no-repeat left bottom;
+	background: url(../images/DaisysWeb.png) no-repeat left bottom;
 	background-size: contain;
 	background-color: $ltmedgray;
 	.tinted-band {
@@ -619,122 +629,135 @@ img {
 /* Process Single page */
 .process-single {
 	.intro-block {
-		padding-bottom: 10px;
 		.intro-heading {
 			border-bottom: none;
+            text-align: center;
 		}
 	}
 	/* BS scrollspy */
 	#plan-menu-list {
-		width: 30px;
 		position: fixed;
-		left: 0;
-		top: 27%;
+		bottom: 0;
+        left: 0;
+        right: 0;
 		z-index: 1000;
-		box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3);
+        flex-direction: row;
+		justify-content: center;
 		.list-group-item {
 			font-family: $Oswald;
 			font-weight: 400;
 			text-align: center;
 			text-decoration: none;
-			padding: 3px;
-			background-color: rgba(255,255,255,0.95);
+            width: 44px;
+            height: 44px;
+			padding: 9px 0px;
+			background-color: #fff;
 			border-color: $ltmedgray;
+            border-radius: 50%;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+            justify-content: center;
+            margin: 10px 3px;
 		}
 		.list-group-item.active {
 			color: #fff;
 			background-color: $burgandy;
-		}
-	}
-	section.section  {
-		position: relative;
-		padding: 0 30px 30px 30px;
-		min-height: 600px;
-		img.hide {
-			display: none;
-		}
-		.content {
-			position: static;
-            padding-bottom: 15px;
-			.intro-block {
-				padding-bottom: 0;
-				.intro-heading {
-					border: none;
-				}
-			}
-			p {
-				font-size: 15px;
-				font-weight: 300;
-			}
-		
-			h2 {
-				font-size: 28px;
-				line-height: 2rem;
-			}
-			i {
-				color: $burgandy;
-			}
-			.shadow-text {
-				position: static;
-				p {
-					font-family: $Roboto;
-					font-size: 40px;
-					text-align: left;
-					color: $medgray;
-					display: inline-block;
-				}
-			}
-		}
-		h1.number {
-			font-size: 36px;
-			line-height: 1em;
-			letter-spacing: 3px;
-			text-transform: uppercase;
-			text-align: right;
-			display: block;
-			color: $medgray;
-		}
-		&.drkgry {
-			background-color: $darkgray;
-			p, h2 {
-				color: #fff;
-			}
-			h1.number {
-				color: rgba(255,255,255,0.3);
-			}
-			i {
-				color: #fff;
-			}
-			shadow-text p {
-				text-align: left;
-				color: $ltmedgray;
-			}
-		}
-	}
+            }
+        }
+        section.section  {
+            position: relative;
+            padding: 50px 30px 10px 30px;
+            img.hide {
+                display: none;
+            }
+            .content {
+                position: static;
+                padding-bottom: 15px;
+                .intro-block {
+                    padding-bottom: 0;
+                    .intro-heading {
+                        border: none;
+                    }
+                }
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+
+                h2 {
+                    font-size: 26px;
+                    line-height: 1.8rem;
+                    margin-top: .3rem;
+                }
+                i {
+                    color: $burgandy;
+                }
+                .dkgry i {
+                    color: #fff;
+                }
+                .shadow-text {
+                    position: static;
+                    p {
+                        font-family: $Roboto;
+                        font-size: 40px;
+                        text-align: left;
+                        color: $medgray;
+                        display: inline-block;
+                    }
+                }
+            }
+            h1.number {
+                font-size: 36px;
+                line-height: 1em;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                text-align: center;
+                display: block;
+                color: $medgray;
+            }
+            &.drkgry {
+                background-color: $darkgray;
+                p, h2,h4 {
+                    color: #fff;
+                }
+                h1.number {
+                    color: rgba(255,255,255,0.3);
+                }
+                h4 {
+                    border-bottom-color: $lightgray;
+                }
+                i {
+                    color: #fff;
+                }
+                shadow-text p {
+                    text-align: left;
+                    color: $ltmedgray;
+                }
+                .stickies {
+                    .note {
+                        p {
+                            color: $darkgray;
+                        }
+                    }
+                }
+            }
+        }
 }
+
 .research {
 	max-width: 100%;
-	background-color: #717171;
-//	.research-img {
-//		max-width: 100%;
-//		background: url("../images/research.png") 0 0 no-repeat;
-//		background-size: cover;
-//		padding-bottom: 44%;
-//        border-radius: 3px;
-//	}
-     .research-table {
-        background-color: #fff;
-        max-width: 100%;
-        font-size: 9px;
-         td {
-             line-height: 1em;
-             width: 200pxpx;
-             padding-left: 5px;
-         }
-         td.large {
-             width: 200px;
-         }
+    max-height: 699px;
+    max-height: 699px;
+    margin: 0 auto;
+    &.shadow {
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25)!important;
     }
+    .research-img {
+		max-width: 100%;
+		border-radius: 0;
+        img {
+            margin-bottom: 0;
+        }
+	}
 }
 footer {
     height: $footer-height;
@@ -772,9 +795,9 @@ footer {
 	width: 52px;
 	background-color: $ltmedgray;
 	position: absolute;
-	bottom: 40px;
-	right: 15px;
-	opacity: .7;
+	bottom: 12px;
+	right: 0;
+	opacity: .5;
 	padding: 5px 3px 10px 3px;	
 	box-shadow: 0 -2px 4px 0 rgba(0,0,0,.6);
 	i {
@@ -818,6 +841,9 @@ footer {
 		}
 	}
 }
+
+
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
 #home {
@@ -832,14 +858,27 @@ footer {
 .sample-buttons {
 	margin: 4rem auto 0 auto;
 }
+
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
-	h4 {
+    h2 {
+        text-align: left;
+    }
+    .process-single {
+        h2 {
+            text-align: left;
+        }
+    }
+    h4 {
 		max-width: 95%;
 	}
 	p.small {
 		max-width: 400px;;
 	}
+    ul {
+        padding-inline-start: 40px;
+    }
 	.linebreak {
 		padding: 0 7px;
 	}
@@ -852,6 +891,7 @@ footer {
 		}
 		.intro-heading {
 			margin-top: 0;
+            padding-top: 10px;
 			.navigation {
 				text-align: right;
 				max-height: 43px;
@@ -859,9 +899,14 @@ footer {
 				margin: 13px -3px 0 0;
 				background-color: transparent;
 				position: absolute;
-				top: -17px;
+				top: -3px;
 				right: 0;
 				box-shadow: none;
+                img, img.inactive, img:hover {
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 1px;
+                }
 			}
 		}
 	}
@@ -871,7 +916,7 @@ footer {
 		position: relative;
 		.content {
 			max-width: 1170px;
-			margin: 60px auto 60px auto;
+			margin: 60px auto 0 auto;
 			padding-bottom: 0;
             position: relative;
             top: -40px;
@@ -909,11 +954,34 @@ footer {
 			}
 		}
 	}
-    section.section {
-        h1.number {
-            padding-top: 20px;
+    .process-single {
+        section.section {
+            padding-top: 10px;
+            h1.number {
+                text-align: right;
+            }
+        }
+        .intro-block {
+            padding: 10px;
+            text-align: left;
+        }
+        #plan-menu-list {
+		position: fixed;
+		bottom: inherit;
+        left: 0;
+        right: inherit;
+		flex-direction: column;
+		justify-content: left;
+        .list-group-item {
+            width: 44px;
+            height: 44px;
+            padding: 9px 0px;
+            justify-content: left;
+            margin: 3px 3px;
+            }
         }
     }
+    
 	#samples {
 		.summary {
 			padding: 10px 0;
@@ -936,7 +1004,7 @@ footer {
 	}
 	#work {
 		background-size: auto;
-        background-position: 10% bottom;
+        background-position: 5% bottom;
 		.intro {
 			margin: 0;
 			h2 {
@@ -968,7 +1036,7 @@ footer {
 	.content {
 		padding: 0 30px 30px 30px;
 		max-width: 800px;
-		padding-bottom: 70px;
+		padding-bottom: 10px;
 	}
     img-full
 	.research {
@@ -976,28 +1044,24 @@ footer {
 		overflow: hidden;
 		max-height: 590px;
 	}
-//	.research-img {
-//		max-width: 100%;
-//		max-height: 590px;
-//	}
 	.stickies {
-		max-width: 90%;
+		max-width: 100%;
 		.note {
 			padding: 10px 0 10px 0px;
 			margin-left: 0;
 			justify-content: center;
 			p {
-				font-size: 15px;
-				line-height: 1.2rem;
-				width: 170px;
-				height: 150px;
+				font-size: 18px;
+				line-height: 1.4rem;
+				width: 210px;
+				height: 180px;
 				margin: 5px;
 			}
 		}
 	}
 	.process-single {
 		.intro-block {
-			padding-bottom: 10px;
+			padding: 0 30px 10px 30px;
 		}
 		#plan-menu-list {
 			width: 35px;

@@ -6,6 +6,8 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
   color: #5D595E;
   background-color: #F2F2F2;
   position: relative; }
@@ -59,8 +61,6 @@ a:hover {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
   text-align: left;
   line-height: 1.3rem;
   margin-bottom: .6rem; }
@@ -68,7 +68,6 @@ p {
 p.small {
   font-size: 13px;
   line-height: 1rem;
-  font-weight: 300;
   font-style: italic;
   text-align: center;
   margin: 0 auto;
@@ -93,6 +92,11 @@ h2 {
   text-align: left;
   color: #5D595E;
   margin-top: 1rem; }
+  h2 + h4 {
+    margin-top: 1rem; }
+
+.process-single h2 {
+  text-align: center; }
 
 h3 {
   font-family: "Oswald", sans-serif;
@@ -104,13 +108,17 @@ h3 {
 
 h4 {
   font-size: 21px;
-  line-height: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
   text-align: left;
   color: #5D595E;
-  margin-bottom: .4rem; }
+  border-bottom: 1px solid #983222;
+  padding-bottom: 7px;
+  margin-top: 3rem;
+  margin-bottom: .8rem; }
 
-h4:first-of-type {
-  margin-top: 1rem; }
+ul {
+  padding-inline-start: 20px; }
 
 a {
   color: #5D595E;
@@ -192,8 +200,7 @@ img {
   background-color: #5D595E;
   padding: 20px 10px 10px 10px;
   margin-top: 10px;
-  position: relative;
-  top: -60px; }
+  position: relative; }
   .img-full .content {
     margin-top: -30px; }
     .img-full .content img {
@@ -223,8 +230,7 @@ img {
   .intro-block .intro-heading {
     border-bottom: 1px solid #A5A5A5;
     display: block;
-    margin-bottom: 0;
-    margin-top: 3rem;
+    margin: 50px 0 0 0;
     position: relative; }
     .intro-block .intro-heading h1 {
       text-align: left;
@@ -245,9 +251,9 @@ img {
       box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1); }
       .intro-block .intro-heading .navigation img, .intro-block .intro-heading .navigation img.inactive, .intro-block .intro-heading .navigation img:hover {
         display: inline-block;
-        width: 32px;
-        height: 32px;
-        margin: 0 1px; }
+        width: 44px;
+        height: 44px;
+        margin: 0 3px; }
       .intro-block .intro-heading .navigation img:hover {
         box-shadow: 0 0 1px 2px #f3e9a6; }
       .intro-block .intro-heading .navigation img.inactive, .intro-block .intro-heading .navigation img.inactive:hover {
@@ -327,7 +333,8 @@ img {
       text-align: center;
       color: #fff;
       margin: 0 auto;
-      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8); }
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+      border: none; }
 
 .site-entry {
   padding-bottom: 40px; }
@@ -357,7 +364,8 @@ img {
   margin: 0 auto;
   padding: 10px 15px 0 20px; }
   .summary h2 {
-    margin-bottom: .3rem; }
+    margin-bottom: .3rem;
+    text-align: left; }
 
 .content.open-house h2 {
   padding: 0 10px; }
@@ -429,7 +437,7 @@ img {
 /* Sample Projects page */
 #work {
   position: static;
-  background: url(../images/DaisysWeb.jpg) no-repeat left bottom;
+  background: url(../images/DaisysWeb.png) no-repeat left bottom;
   background-size: contain;
   background-color: #C8C5C5; }
   #work .tinted-band {
@@ -521,32 +529,37 @@ img {
 /* Process Single page */
 .process-single {
   /* BS scrollspy */ }
-  .process-single .intro-block {
-    padding-bottom: 10px; }
-    .process-single .intro-block .intro-heading {
-      border-bottom: none; }
+  .process-single .intro-block .intro-heading {
+    border-bottom: none;
+    text-align: center; }
   .process-single #plan-menu-list {
-    width: 30px;
     position: fixed;
+    bottom: 0;
     left: 0;
-    top: 27%;
+    right: 0;
     z-index: 1000;
-    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3); }
+    flex-direction: row;
+    justify-content: center; }
     .process-single #plan-menu-list .list-group-item {
       font-family: "Oswald", sans-serif;
       font-weight: 400;
       text-align: center;
       text-decoration: none;
-      padding: 3px;
-      background-color: rgba(255, 255, 255, 0.95);
-      border-color: #C8C5C5; }
+      width: 44px;
+      height: 44px;
+      padding: 9px 0px;
+      background-color: #fff;
+      border-color: #C8C5C5;
+      border-radius: 50%;
+      box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+      justify-content: center;
+      margin: 10px 3px; }
     .process-single #plan-menu-list .list-group-item.active {
       color: #fff;
       background-color: #983222; }
   .process-single section.section {
     position: relative;
-    padding: 0 30px 30px 30px;
-    min-height: 600px; }
+    padding: 50px 30px 10px 30px; }
     .process-single section.section img.hide {
       display: none; }
     .process-single section.section .content {
@@ -560,10 +573,13 @@ img {
         font-size: 15px;
         font-weight: 300; }
       .process-single section.section .content h2 {
-        font-size: 28px;
-        line-height: 2rem; }
+        font-size: 26px;
+        line-height: 1.8rem;
+        margin-top: .3rem; }
       .process-single section.section .content i {
         color: #983222; }
+      .process-single section.section .content .dkgry i {
+        color: #fff; }
       .process-single section.section .content .shadow-text {
         position: static; }
         .process-single section.section .content .shadow-text p {
@@ -577,34 +593,37 @@ img {
       line-height: 1em;
       letter-spacing: 3px;
       text-transform: uppercase;
-      text-align: right;
+      text-align: center;
       display: block;
       color: #A5A5A5; }
     .process-single section.section.drkgry {
       background-color: #5D595E; }
-      .process-single section.section.drkgry p, .process-single section.section.drkgry h2 {
+      .process-single section.section.drkgry p, .process-single section.section.drkgry h2, .process-single section.section.drkgry h4 {
         color: #fff; }
       .process-single section.section.drkgry h1.number {
         color: rgba(255, 255, 255, 0.3); }
+      .process-single section.section.drkgry h4 {
+        border-bottom-color: #F2F2F2; }
       .process-single section.section.drkgry i {
         color: #fff; }
       .process-single section.section.drkgry shadow-text p {
         text-align: left;
         color: #C8C5C5; }
+      .process-single section.section.drkgry .stickies .note p {
+        color: #5D595E; }
 
 .research {
   max-width: 100%;
-  background-color: #717171; }
-  .research .research-table {
-    background-color: #fff;
+  max-height: 699px;
+  max-height: 699px;
+  margin: 0 auto; }
+  .research.shadow {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25) !important; }
+  .research .research-img {
     max-width: 100%;
-    font-size: 9px; }
-    .research .research-table td {
-      line-height: 1em;
-      width: 200pxpx;
-      padding-left: 5px; }
-    .research .research-table td.large {
-      width: 200px; }
+    border-radius: 0; }
+    .research .research-img img {
+      margin-bottom: 0; }
 
 footer {
   height: 40px;
@@ -635,9 +654,9 @@ footer {
   width: 52px;
   background-color: #C8C5C5;
   position: absolute;
-  bottom: 40px;
-  right: 15px;
-  opacity: .7;
+  bottom: 12px;
+  right: 0;
+  opacity: .5;
   padding: 5px 3px 10px 3px;
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.6); }
   .back-top i {
@@ -678,11 +697,20 @@ footer {
   margin: 4rem auto 0 auto; }
 
 @media (min-width: 768px) {
+  h2 {
+    text-align: left; }
+
+  .process-single h2 {
+    text-align: left; }
+
   h4 {
     max-width: 95%; }
 
   p.small {
     max-width: 400px; }
+
+  ul {
+    padding-inline-start: 40px; }
 
   .linebreak {
     padding: 0 7px; }
@@ -694,7 +722,8 @@ footer {
       font-size: 19px;
       margin: 0 0 1.2rem 14px; }
     .intro-block .intro-heading {
-      margin-top: 0; }
+      margin-top: 0;
+      padding-top: 10px; }
       .intro-block .intro-heading .navigation {
         text-align: right;
         max-height: 43px;
@@ -702,9 +731,13 @@ footer {
         margin: 13px -3px 0 0;
         background-color: transparent;
         position: absolute;
-        top: -17px;
+        top: -3px;
         right: 0;
         box-shadow: none; }
+        .intro-block .intro-heading .navigation img, .intro-block .intro-heading .navigation img.inactive, .intro-block .intro-heading .navigation img:hover {
+          width: 32px;
+          height: 32px;
+          margin: 0 1px; }
 
   .img-full {
     margin: 40px 0 0 0;
@@ -712,7 +745,7 @@ footer {
     position: relative; }
     .img-full .content {
       max-width: 1170px;
-      margin: 60px auto 60px auto;
+      margin: 60px auto 0 auto;
       padding-bottom: 0;
       position: relative;
       top: -40px; }
@@ -740,8 +773,26 @@ footer {
         #home .wrap-800 h3 .title.ui {
           letter-spacing: 3px; }
 
-  section.section h1.number {
-    padding-top: 20px; }
+  .process-single section.section {
+    padding-top: 10px; }
+    .process-single section.section h1.number {
+      text-align: right; }
+  .process-single .intro-block {
+    padding: 10px;
+    text-align: left; }
+  .process-single #plan-menu-list {
+    position: fixed;
+    bottom: inherit;
+    left: 0;
+    right: inherit;
+    flex-direction: column;
+    justify-content: left; }
+    .process-single #plan-menu-list .list-group-item {
+      width: 44px;
+      height: 44px;
+      padding: 9px 0px;
+      justify-content: left;
+      margin: 3px 3px; }
 
   #samples .summary {
     padding: 10px 0; }
@@ -759,7 +810,7 @@ footer {
 
   #work {
     background-size: auto;
-    background-position: 10% bottom; }
+    background-position: 5% bottom; }
     #work .intro {
       margin: 0; }
       #work .intro h2 {
@@ -784,7 +835,7 @@ footer {
   .content {
     padding: 0 30px 30px 30px;
     max-width: 800px;
-    padding-bottom: 70px; }
+    padding-bottom: 10px; }
 
   img-full
   .research {
@@ -793,20 +844,20 @@ footer {
     max-height: 590px; }
 
   .stickies {
-    max-width: 90%; }
+    max-width: 100%; }
     .stickies .note {
       padding: 10px 0 10px 0px;
       margin-left: 0;
       justify-content: center; }
       .stickies .note p {
-        font-size: 15px;
-        line-height: 1.2rem;
-        width: 170px;
-        height: 150px;
+        font-size: 18px;
+        line-height: 1.4rem;
+        width: 210px;
+        height: 180px;
         margin: 5px; }
 
   .process-single .intro-block {
-    padding-bottom: 10px; }
+    padding: 0 30px 10px 30px; }
   .process-single #plan-menu-list {
     width: 35px;
     top: 18%;
