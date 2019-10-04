@@ -73,21 +73,19 @@
 
 
 /* ANIMATIONS FOR PROCESS: UNDERSTAND & EMPATHIZE SECTION */
-
-.slide-in-left {
-	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.slide-in-bottom {
+	animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-@keyframes slide-in-left {
+@keyframes slide-in-bottom {
   0% {
-    transform: translatex(-1000px);
+    transform: translateY(200px);
     opacity: 0;
   }
   100% {
-    transform: translatex(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 
 /* ANIMATIONS FOR PROCESS: STICKIES SECTION */
 .no-rotate:hover {

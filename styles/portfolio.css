@@ -82,7 +82,6 @@ h1 {
   line-height: 1.6rem;
   letter-spacing: 2px;
   color: #983222;
-  display: inline-block;
   margin-bottom: .3rem; }
 
 h2 {
@@ -857,7 +856,7 @@ footer {
         margin: 5px; }
 
   .process-single .intro-block {
-    padding: 0 30px 10px 30px; }
+    padding: 30px 30px 10px 30px; }
   .process-single #plan-menu-list {
     width: 35px;
     top: 18%;
